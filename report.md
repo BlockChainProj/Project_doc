@@ -71,7 +71,7 @@
 
 #### 2. 数据流图
 
-![2](2.png)
+![2](/img/2.png)
 
 #### 3. 核心功能介绍
 
@@ -242,97 +242,97 @@
 
   - 初始状态
 
-  ![1576242507018](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576242507018.png)
+  ![1576242507018](/img/3.png)
 
   - 点击更新加载后显示【加载中】
 
-  ![1576242522121](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576242522121.png)
+  ![1576242522121](/img/4.png)
 
   - 加载完毕
 
-  ![1576240886114](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576240886114.png)
+  ![1576240886114](/img/5.png)
 
 - 查询公钥地址：可以点击右上角看到当前已在链上有部署的所有公司的公钥地址。便于之后交易需要用到公钥地址时进行复制粘贴。
 
-  ![1576243174063](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576243174063.png)
+  ![1576243174063](/img/6.png)
 
 - 签发应收账款：从若公钥的输入为不存在的地址则会导致上链失败。其他符合输入条件并成功生成交易的输入会得到上链成功的消息提示，并且在查询账单中再次点击【更新加载】，可以看到上链成功记录。（此处为公司A向公司B借款4000）
 
   - 签发应收账款：上链失败
 
-  ![1576243645292](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576243645292.png)
+  ![1576243645292](/img/7.png)
 
   - 签发应收账款：上链成功  
 
-  ![1576243726522](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576243726522.png)
+  ![1576243726522](/img/8.png)
 
   - 查询账单：新增账单
 
-  ![1576244076061](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576244076061.png)
+  ![1576244076061](/img/9.png)
 
 - 应收账单转让：当前公司为中间公司，输入原借款公司公钥与当前贷款公司公钥进行转移。此处功能展示分为一下几步：
 
   - 搭建B公司的客户端与服务端，B公司向C公司借款2000。可以看到刚才A公司向B公司的借款记录也记录在B公司的相关账单中。
 
-    ![1576245076572](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576245076572.png)
+    ![1576245076572](/img/10.png)
 
   - B公司作为中间公司，将A公司对自己的借款账单进行转移，对于以上数据的结果最终为：A公司欠款B公司2000，A公司欠款C公司2000，B公司不欠款C公司。
 
     |               B公司转移A公司对自己的的应付账单               |
     | :----------------------------------------------------------: |
-    | ![1576245368682](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576245368682.png) |
+    |                ![1576245368682](/img/11.png)                 |
     |   **转移结果**（B公司视角：与A公司、C公司的账单金额减少）    |
-    |    ![](F:\软工大三上\区块链\区块链原理与技术大作业\3.png)    |
+    |                       ![](/img/12.png)                       |
     | **转移结果**（A公司视角：与B公司账单金额减少，新增与C公司的借款） |
-    |    ![](F:\软工大三上\区块链\区块链原理与技术大作业\2.png)    |
+    |                       ![](/img/13.png)                       |
 
 - 向银行融资：从查询的账单中得到用于融资的账单index（第一条index为0依次递增），融资后该账单的【是否用于融资】条目会显示YES。对于已经用于融资的账单融资将不成功。
 
   - 此处融资第2条，融资金额为3000
 
-    ![1576246964988](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576246964988.png)
+    ![1576246964988](/img/14.png)
 
   - 结果查询显示为已用于融资。
 
-    ![](F:\软工大三上\区块链\区块链原理与技术大作业\4.png)
+    ![](/img/15.png)
 
 - 支付清算：从查询的账单中得到用于支付清算的账单index（第一条index为0依次递增），清算后该账单的所有条目将清零，账单信息更新为“settled”，时间更新为清算的时间。对于已经清算的账单将不成功。
 
   - 输入清算的账单索引（此处为1）
 
-    ![1576247333050](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576247333050.png)
+    ![1576247333050](/img/16.png)
 
   - 回到列出账单，结果被清零，信息修改为“settled”，并且时间戳也更新。
 
-    ![1576247386276](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576247386276.png)
+    ![1576247386276](/img/17.png)
 
 ### 四、界面展示
 
 - 主页面：可以看到最上部就展示了该项目的功能，右上角可查看所有公司的公钥地址
-  ![1576240847242](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576240847242.png)
+  ![1576240847242](/img/18.png)
 
 - 查看公钥地址
 
-  ![1576243181363](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576243181363.png)
+  ![1576243181363](/img/19.png)
 
 - 查询账单页面
-  ![1576240886114](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576240886114.png)
+  ![1576240886114](/img/20.png)
 
 - 签发应收账款页面
 
-  ![1576240942909](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576240942909.png)
+  ![1576240942909](/img/21.png)
 
 - 应收账款转让页面
 
-  ![1576240986540](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576240986540.png)
+  ![1576240986540](/img/22.png)
 
 - 银行融资页面
 
-  ![1576241012844](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576241012844.png)
+  ![1576241012844](/img/23.png)
 
 - 支付结算页面
 
-  ![1576241039812](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1576241039812.png)
+  ![1576241039812](/img/24.png)
 
 ### 五、心得体会
 
