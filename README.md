@@ -10,3 +10,5 @@ demo.avi
 [BlockChainProj/Server](https://github.com/BlockChainProj/Server)
 ### 实现加分项
 友好的前端界面
+
+![](/img/18.png)
