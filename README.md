@@ -3,7 +3,7 @@
 ### 实验报告
 [report.md](https://github.com/BlockChainProj/Project_doc/blob/master/report.md)
 ### 演示视频
-[demo.mp4](https://github.com/BlockChainProj/Project_doc/edit/master/demo.mp4)
+[demo.mp4](https://github.com/BlockChainProj/Project_doc/blob/master/demo.mp4)
 ### Quick start
 - 链端
 ```shell
